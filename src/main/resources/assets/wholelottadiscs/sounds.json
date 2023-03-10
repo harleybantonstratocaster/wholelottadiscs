@@ -1,0 +1,58 @@
+{
+  "doors": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:doors",
+        "stream": true
+      }
+    ]
+  },
+  "soad": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:soad",
+        "stream": true
+      }
+    ]
+  },
+  "agatha": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:agatha",
+        "stream": true
+      }
+    ]
+  },
+  "mcr": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:mcr",
+        "stream": true
+      }
+    ]
+  },
+  "metallica": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:metallica",
+        "stream": true
+      }
+    ]
+  },
+  "pantera": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:pantera",
+        "stream": true
+      }
+    ]
+  },
+  "slayer": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:slayer",
+        "stream": true
+      }
+    ]
+  }
+}

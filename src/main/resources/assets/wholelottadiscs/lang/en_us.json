@@ -1,0 +1,22 @@
+{
+  "item.wholelottadiscs.record_sleeve": "Record Sleeve",
+  "item.wholelottadiscs.discs_collection": "§гDiscs Collection!",
+  "item.wholelottadiscs.boombox": "Boombox",
+  "item.wholelottadiscs.doors": "§bMusic Disc",
+  "item.wholelottadiscs.doors.desc": "The Doors - Break on Through",
+  "item.wholelottadiscs.soad": "§bMusic Disc",
+  "item.wholelottadiscs.soad.desc": "System Of A Down - Toxicity",
+  "item.wholelottadiscs.agatha": "§bMusic Disc",
+  "item.wholelottadiscs.agatha.desc": "Агата Кристи - Опиум Для Никого",
+  "item.wholelottadiscs.metallica": "§bMusic Disc",
+  "item.wholelottadiscs.metallica.desc": "Metallica - Whiplash",
+  "item.wholelottadiscs.pantera": "§bMusic Disc",
+  "item.wholelottadiscs.pantera.desc": "Pantera - Walk",
+  "item.wholelottadiscs.mcr": "§bMusic Disc",
+  "item.wholelottadiscs.mcr.desc": "My Chemical Romance - Na Na Na Na Na",
+  "item.wholelottadiscs.slayer": "§bMusic Disc",
+  "item.wholelottadiscs.slayer.desc": "Slayer - Raining Blood",
+
+  "itemGroup.discstab": "Whole Lotta Discs"
+
+}
