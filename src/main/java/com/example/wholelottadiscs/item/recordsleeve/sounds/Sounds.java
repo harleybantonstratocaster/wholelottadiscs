@@ -19,6 +19,9 @@ public class Sounds {
     public static RegistryObject<SoundEvent> SLAYER = registerSoundEvent("slayer");
     public static RegistryObject<SoundEvent> METALLICA = registerSoundEvent("metallica");
     public static RegistryObject<SoundEvent> PANTERA = registerSoundEvent("pantera");
+    public static RegistryObject<SoundEvent> AUKCION = registerSoundEvent("aukcion");
+    public static RegistryObject<SoundEvent> VEDRO = registerSoundEvent("vedro");
+    public static RegistryObject<SoundEvent> NECO = registerSoundEvent("neco");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(WholeLottaDiscs.MOD_ID, name)));

@@ -98,6 +98,15 @@ public class RecordSleeve extends Item {
         if (recordsleeve.getStackInSlot(0).getItem() == ModItems.DOORS.get()){
             return 0.7F;
         }
+        if (recordsleeve.getStackInSlot(0).getItem() == ModItems.AUKCION.get()){
+            return 0.8F;
+        }
+        if (recordsleeve.getStackInSlot(0).getItem() == ModItems.VEDRO.get()){
+            return 0.9F;
+        }
+        if (recordsleeve.getStackInSlot(0).getItem() == ModItems.NECO.get()){
+            return 1F;
+        }
         return 0.0F;
     }
 

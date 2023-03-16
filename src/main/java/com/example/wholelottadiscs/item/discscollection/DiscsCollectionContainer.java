@@ -14,25 +14,24 @@ import net.minecraftforge.items.SlotItemHandler;
 public class DiscsCollectionContainer extends AbstractContainerMenu {
 
     public DiscsCollectionContainer(int windowId, Inventory playerInv,
-                                 ItemStackHandlerBoombox contents,
-                                 ItemStack held) {
+                                    ItemStackHandlerBoombox contents,
+                                    ItemStack held) {
         super(ModContainers.DISCS_COLLECTION.get(), windowId);
-        //this.addSlot(new SlotItemHandler(contents, 0, 8, 35));
-        //this.addSlot(new SlotItemHandler(contents, 1, 26, 35));
-        addInterface(contents);
+        addInterfaceL(contents);
+        addInterfaceR(contents);
         addPlayerHotbar(playerInv);
         addPlayerInventory(playerInv);
 
     }
 
     public static DiscsCollectionContainer createContainerServerSide(int windowID, Inventory playerInventory,
-                                                                  ItemStackHandlerBoombox bagContents,
-                                                                  ItemStack jukebox) {
+                                                                     ItemStackHandlerBoombox bagContents,
+                                                                     ItemStack jukebox) {
         return new DiscsCollectionContainer(windowID, playerInventory, bagContents, jukebox);
     }
 
     public static DiscsCollectionContainer createContainerClientSide(int windowID, Inventory playerInventory, FriendlyByteBuf extraData) {
-        ItemStackHandlerBoombox handler = new ItemStackHandlerBoombox(9);
+        ItemStackHandlerBoombox handler = new ItemStackHandlerBoombox(18);
         return new DiscsCollectionContainer(windowID, playerInventory, handler, ItemStack.EMPTY);
     }
 
@@ -58,10 +57,12 @@ public class DiscsCollectionContainer extends AbstractContainerMenu {
 
         return retStack;
     }
+
     @Override
     public boolean stillValid(Player player) {
         return true;
     }
+
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
@@ -75,11 +76,21 @@ public class DiscsCollectionContainer extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
         }
     }
-    private void addInterface(IItemHandler inventory){
-        for (int i = 0; i < 9; ++i) {
-            this.addSlot(new SlotItemHandler(inventory, i, 8 + i * 18, 35));
+
+    private void addInterfaceL(IItemHandler inventory) {
+        for (int i = 0; i < 3; ++i) {
+            for (int l = 0; l < 3; ++l) {
+                this.addSlot(new SlotItemHandler(inventory, l + i * 3, 18 + l * 18, 15 + i * 18));
+            }
         }
+
     }
+    private void addInterfaceR(IItemHandler inventory) {
+        for (int i = 0; i < 3; ++i) {
+            for (int l = 0; l < 3; ++l) {
+                this.addSlot(new SlotItemHandler(inventory, l + i * 3 + 9, 107 + l * 18, 15 + i * 18));
+            }
+        }
 
+    }
 }
-

@@ -38,6 +38,12 @@ public class ModItems {
             () -> new RecordItem(4, Sounds.PANTERA,new Item.Properties().tab(Creativetab.TAB ).stacksTo(1),219));
     public static final RegistryObject<Item> SLAYER = ITEMS.register("slayer",
             () -> new RecordItem(4, Sounds.SLAYER,new Item.Properties().tab(Creativetab.TAB ).stacksTo(1),219));
+    public static final RegistryObject<Item> AUKCION = ITEMS.register("aukcion",
+            () -> new RecordItem(4, Sounds.AUKCION,new Item.Properties().tab(Creativetab.TAB ).stacksTo(1),219));
+    public static final RegistryObject<Item> VEDRO = ITEMS.register("vedro",
+            () -> new RecordItem(4, Sounds.VEDRO,new Item.Properties().tab(Creativetab.TAB ).stacksTo(1),219));
+    public static final RegistryObject<Item> NECO = ITEMS.register("neco",
+            () -> new RecordItem(4, Sounds.NECO,new Item.Properties().tab(Creativetab.TAB ).stacksTo(1),219));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

@@ -13,6 +13,9 @@
     { "predicate": { "wholelottadiscs:empty": 0.4 }, "model": "wholelottadiscs:item/record_sleeve_slayer" },
     { "predicate": { "wholelottadiscs:empty": 0.5 }, "model": "wholelottadiscs:item/record_sleeve_metallica" },
     { "predicate": { "wholelottadiscs:empty": 0.6 }, "model": "wholelottadiscs:item/record_sleeve_agatha" },
-    { "predicate": { "wholelottadiscs:empty": 0.7 }, "model": "wholelottadiscs:item/record_sleeve_doors" }
+    { "predicate": { "wholelottadiscs:empty": 0.7 }, "model": "wholelottadiscs:item/record_sleeve_doors" },
+    { "predicate": { "wholelottadiscs:empty": 0.8 }, "model": "wholelottadiscs:item/record_sleeve_aukcion" },
+    { "predicate": { "wholelottadiscs:empty": 0.9 }, "model": "wholelottadiscs:item/record_sleeve_vedro" },
+    { "predicate": { "wholelottadiscs:empty": 1 }, "model": "wholelottadiscs:item/record_sleeve_neco" }
   ]
 }

@@ -54,5 +54,29 @@
         "stream": true
       }
     ]
+  },
+  "aukcion": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:aukcion",
+        "stream": true
+      }
+    ]
+  },
+  "vedro": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:vedro",
+        "stream": true
+      }
+    ]
+  },
+  "neco": {
+    "sounds": [
+      {
+        "name": "wholelottadiscs:neco",
+        "stream": true
+      }
+    ]
   }
 }

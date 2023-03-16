@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class DiscsCollectionScreen extends AbstractContainerScreen<DiscsCollectionContainer> {
-    public static final ResourceLocation TEXTURE = new ResourceLocation(WholeLottaDiscs.MOD_ID,"textures/gui/record_sleeve.png");
+    public static final ResourceLocation TEXTURE = new ResourceLocation(WholeLottaDiscs.MOD_ID,"textures/gui/discs_collection.png");
     public DiscsCollectionScreen(DiscsCollectionContainer pMenu, Inventory playerInv, Component title) {
         super(pMenu, playerInv, title);
 

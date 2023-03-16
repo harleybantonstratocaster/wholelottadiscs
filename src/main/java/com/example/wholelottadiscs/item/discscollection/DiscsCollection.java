@@ -35,7 +35,7 @@ public class DiscsCollection extends Item {
         ItemStack stack = pPlayer.getItemInHand(pUsedHand);
         if (!pLevel.isClientSide) {
             MenuProvider containerProviderDiscsCollection = new DiscsCollection.ContainerProviderDiscsCollection(stack);
-            final int NUMBER_OF_SLOTS = 9;
+            final int NUMBER_OF_SLOTS = 18;
             NetworkHooks.openScreen((ServerPlayer) pPlayer,
                     containerProviderDiscsCollection,
                     (packetBuffer)->{packetBuffer.writeInt(NUMBER_OF_SLOTS);});
@@ -68,7 +68,7 @@ public class DiscsCollection extends Item {
     private static ItemStackHandlerBoombox getItemStackHandlerDiscsCollection(ItemStack itemStack) {
         IItemHandler discsCollection = itemStack.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
         if (!(discsCollection instanceof ItemStackHandlerBoombox)) {
-            return new ItemStackHandlerBoombox(9);
+            return new ItemStackHandlerBoombox(18);
         }
         return (ItemStackHandlerBoombox) discsCollection;
     }

@@ -100,8 +100,7 @@ public class Boombox extends Item {
 
     }
     public void setPlaying(boolean condition, Item item, Level level, Entity entity){
-
-        Minecraft minecraft = Minecraft.getInstance().screen.getMinecraft();
+        Minecraft minecraft = Minecraft.getInstance();
         if (condition){
             minecraft.getSoundManager().play(new BoomboxSoundInstance((RecordItem) item,(Player) entity));
         }

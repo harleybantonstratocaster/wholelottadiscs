@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "wholelottadiscs:item/record_sleeve_aukcion"
+
+  }
+}

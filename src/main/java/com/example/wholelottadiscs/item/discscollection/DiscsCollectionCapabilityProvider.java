@@ -19,7 +19,7 @@ public class DiscsCollectionCapabilityProvider implements ICapabilitySerializabl
     private ItemStackHandlerBoombox itemStackHandlerDiscsCollection;
     private @NotNull ItemStackHandlerBoombox getCachedInventory() {
         if (itemStackHandlerDiscsCollection == null) {
-            itemStackHandlerDiscsCollection = new ItemStackHandlerBoombox(9);
+            itemStackHandlerDiscsCollection = new ItemStackHandlerBoombox(18);
         }
         return itemStackHandlerDiscsCollection;
     }
